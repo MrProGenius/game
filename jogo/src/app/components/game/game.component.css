@@ -1,0 +1,96 @@
+.fundo,
+body {
+  background: url("../../../assets/img/fundo_treino.gif") repeat fixed center;
+  width: auto;
+  height: 89vh;
+}
+.alinhamento {
+  padding-top: 30vh;
+}
+.p1 {
+  margin-top: 20vh;
+  margin-left: 30vw;
+  width: 200px;
+  height: 200px;
+  animation: moveBoneco1 2s ease-in-out infinite forwards;
+}
+
+.p2 {
+  margin-top: 20vh;
+  margin-left: 13.5vw;
+  width: 200px;
+  height: 200px;
+  animation: moveBoneco2 2s ease-in-out infinite forwards;
+}
+.pontos {
+  align-items: right;
+}
+.icons {
+  padding-top: 5px;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+@keyframes moveBoneco1 {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(10vw);
+  }
+}
+@keyframes moveBoneco2 {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(-10vw);
+  }
+}
+.sair {
+  margin-top: 5px;
+  margin-left: 20px;
+  background-color: red;
+  color: white;
+}
+.atributos {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.ave {
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  left: -100px;
+}
+.aves {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: -300px;
+}
+#batata {
+  top: 5%;
+  position: absolute;
+  animation: linear infinite;
+  animation-name: run;
+  animation-duration: 10s;
+}
+@keyframes run {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+.formata {
+  background-color: rgba(0, 0, 0, 0.496) !important;
+  border-radius: 27px;
+  width: 80vw;
+}

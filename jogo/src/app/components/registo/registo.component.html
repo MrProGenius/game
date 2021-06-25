@@ -1,0 +1,25 @@
+<div class="bloco">
+  <img src="../../../assets/img/signup.png">
+  <div class="mb-3">
+    <h4>Criar Conta</h4>
+    USER:<input type="text" #user>
+    PASSWORD:<input type="text" #password>
+  </div>
+  <div class="mb-3 ">
+    <h4>Criar Personagem</h4>
+    <div class="mb-3">
+      NOME:
+      <input type="text" #nome>
+      ATK:
+      <input type="number" #atk>
+    </div>
+    <div class="mb-3">
+      VIDA:
+      <input type="number" #vida>
+      INT:
+      <input type="number" #int>
+    </div>
+    <button class="btn" (click)="registar(user.value, password.value)">Registar</button>
+    <button class="btn " (click)="criarPersonagem(nome.value, atk.value,int.value, vida.value)">Criar CHar</button>
+  </div>
+</div>

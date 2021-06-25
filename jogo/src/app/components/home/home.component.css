@@ -1,0 +1,26 @@
+.espacamento{
+  display: flex;
+  padding-top: 30vh;
+  margin-left: 30vw;
+}
+img{
+  width: 400px;
+  height: 400px;
+  margin-top: 10vh;
+  margin-left: 37vw;
+  margin-right: 30vw;
+}
+h1{
+  padding-top: 10px;
+    color: white;
+    text-transform: uppercase;
+  text-align: center;
+  text-shadow: 3px 5px 2px #080808;
+  color: rgb(226, 223, 8);
+  animation: mymove 9s infinite;
+  transition: inherit;
+  }
+
+  @keyframes mymove {
+    10% {text-shadow: 10px 15px 10px rgb(255, 255, 255)}
+  }

@@ -1,0 +1,15 @@
+<button class="btn" [routerLink]="['/menu']" routerLinkActive="router-link-active">Voltar à cidade</button>
+<div class="bloco">
+    <h1>Criar Arma</h1>
+    <p>Nome da Arma</p>
+    <input type="text" #nome>
+    <p>ATK</p>
+    <input type="number" #atk>
+    <p>Vida</p>
+    <input type="number" #vida>
+    <p>Durabilidade</p>
+    <input type="number" #durabilidade>
+    <p>Tipo Arma</p>
+    <input type="text" #tipo>
+    <button class="btn" (click)="criaArma(nome.value, atk.value, durabilidade.value, vida.value, tipo.value)">Criar Arma</button>
+</div>

@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+.fundo, body{
+  background: lightblue url(../../jogo/src/assets/img/bg.jpg) repeat fixed center;
+
+}
+
+  .alinhamento{
+    color: white;
+
+    align-items: center;
+  }
